@@ -15,6 +15,7 @@ export const theme = {
       tertiary: `rgba(25, 24, 37, 0.75)`,
     },
     color: {
+      white: "#ffffff",
       orange: "#FF5722",
       indigo: "#5D50C6",
       brightSun: "#FACD49",
