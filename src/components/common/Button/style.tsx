@@ -1,4 +1,4 @@
-import { TTypeColor } from "src/types/common/buttonType";
+import { TTypeColor } from "@/types/common/buttonType";
 import styled from "styled-components";
 
 interface Props {
