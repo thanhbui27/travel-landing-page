@@ -35,9 +35,11 @@ export const theme = {
         xl: "1.5rem", //24px
         "2xl": "2rem", // 32px
         "3xl": "2.75rem", //44px
+        "4xl": "3rem", //48px
+        "5xl": "4rem", //64px
       },
     },
-    
+
     device: {
       small: `only screen and (max-width: ${size.mobile})`,
       large: `only screen and (max-width: ${size.desktop})`,
