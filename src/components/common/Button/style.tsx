@@ -17,5 +17,6 @@ export const ButtonContainer = styled.button<Props>`
   gap: 12px;
   span {
     font-size: ${(props) => props.theme.pallete.typography.fontSize["base"]};
+    white-space: nowrap;
   }
 `;
