@@ -6,9 +6,16 @@ interface IShape {
   icon: React.ReactNode;
   typeShape: EShape;
   bgcolor: string;
+  boxShadow?: string;
 }
 
-const Shape: React.FC<IShape> = ({ typeShape, size = "xl", icon, bgcolor }) => {
+const Shape: React.FC<IShape> = ({
+  typeShape,
+  size = "xl",
+  icon,
+  bgcolor,
+  boxShadow = "",
+}) => {
   const sizeShapeCircle = {
     lg: "16px",
     xl: "24px",
@@ -23,12 +30,20 @@ const Shape: React.FC<IShape> = ({ typeShape, size = "xl", icon, bgcolor }) => {
 
   const typeShapeRender = {
     [EShape.CIRCLE]: (
-      <CircleShape size={sizeShapeCircle} bgcolor={bgcolor}>
+      <CircleShape
+        size={sizeShapeCircle}
+        bgcolor={bgcolor}
+        boxshadow={boxShadow}
+      >
         <div className="icon">{icon}</div>
       </CircleShape>
     ),
     [EShape.SQUARE]: (
-      <SquareRounded size={sizeShapeSquare} bgcolor={bgcolor}>
+      <SquareRounded
+        size={sizeShapeSquare}
+        bgcolor={bgcolor}
+        boxshadow={boxShadow}
+      >
         <div className="icon">{icon}</div>
       </SquareRounded>
     ),
