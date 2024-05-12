@@ -8,8 +8,8 @@ const BannerContainer = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 100vh;
-      padding: 64px 165px;
+      height: 90vh;
+      padding: 0 165px;
     }
     &-left {
       max-width: 472px;
